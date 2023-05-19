@@ -1,0 +1,119 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .login-container {
+    flex-direction: column;
+  }
+}
+.login-landing-container {
+  display: none;
+}
+
+.landing-img {
+  width: 80%;
+  max-width: 500px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .login-landing-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .login-landing-container {
+    display: flex;
+  }
+}
+.login-content-container {
+  width: 85%;
+  max-width: 380px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 25px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.website-logo {
+  width: 78px;
+  height: 40px;
+}
+
+.website-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #262626;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.input-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #262626;
+  margin-bottom: 10px;
+}
+.input {
+  background: #eeeeee;
+  border-radius: 2px;
+  border: none;
+  height: 40px;
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #262626;
+  padding-left: 15px;
+}
+.login-btn {
+  border: none;
+  background: #4094ef;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+}
+.err-msg {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ef4444;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
