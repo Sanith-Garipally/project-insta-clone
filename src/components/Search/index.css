@@ -1,0 +1,132 @@
+.search-container-sm {
+  display: flex;
+  justify-content: center;
+}
+.search-content-container-sm {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-loader-container-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: 80%;
+}
+.sf-sm-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  width: 80%;
+}
+.sf-head {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+.sf-btn {
+  width: 102px;
+  height: 32px;
+  background: #4094ef;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.sf-sm-image {
+  width: 100%;
+  max-width: 180px;
+}
+
+/* Small screen search landing */
+.sp-sc-landing-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-sp-sc-container {
+  width: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 60vh;
+  margin-top: 20px;
+}
+
+.search-landing-sm-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sc-sm-search-icon {
+  color: #dbdbdb;
+  width: 36px;
+  height: 36px;
+}
+.sc-search-para {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: #989898;
+}
+@media screen and (min-width: 768px) {
+  .search-landing-sm-screen {
+    display: none;
+  }
+}
+
+.sc-search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.wrapper-sc-search-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.search-input-sm {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  outline: none;
+  padding-left: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #989898;
+  width: 70%;
+  max-width: 250px;
+  height: 24px;
+}
+
+.search-btn-sm {
+  height: 24px;
+  width: 34px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #dbdbdb;
+}

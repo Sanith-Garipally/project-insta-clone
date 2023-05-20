@@ -3,11 +3,20 @@ import Cookies from 'js-cookie'
 
 export const httpOptions = (method = 'GET') => {
   const jwtToken = Cookies.get('jwt_token')
-  const options = {
-    method,
-    headers: {
-      Authorization: `Bearer ${jwtToken}`,
-    },
+  let options
+  if (method === 'GET') {
+    options = {
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
+    }
+  } else {
+    options = {
+      method,
+      headers: {
+        Authorization: `Bearer ${jwtToken}`,
+      },
+    }
   }
   return options
 }

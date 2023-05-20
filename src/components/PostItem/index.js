@@ -82,9 +82,9 @@ const PostItem = props => {
         <ul className="comments-container">
           {comments.map(object => (
             <li key={object.userId} className="comment-list-item">
-              <p className="comment-username">
-                {object.username}{' '}
-                <span className="user-comment">{object.comment}</span>
+              <p className="user-comment">
+                <span className="comment-username">{object.username}</span>{' '}
+                {object.comment}
               </p>
             </li>
           ))}

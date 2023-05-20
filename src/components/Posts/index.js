@@ -8,7 +8,7 @@ const Posts = props => {
     <li className="post-img-item">
       <img
         className="post-img"
-        alt={isUser === 'true' ? 'user story' : 'my story'}
+        alt={isUser === 'true' ? 'user post' : 'my post'}
         src={image}
       />
     </li>

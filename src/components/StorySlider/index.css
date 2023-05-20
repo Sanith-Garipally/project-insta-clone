@@ -100,3 +100,8 @@ Previous Arrow buttons according to your project */
   border: none;
   cursor: pointer;
 }
+
+.rf-img {
+  width: 50%;
+  max-width: 80px;
+}

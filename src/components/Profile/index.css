@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .user-profile-container {
+    margin-top: 20px;
+  }
+}
 .profile-content-container {
   width: 80%;
 }
@@ -194,5 +199,121 @@
   .up-list-container {
     width: 80%;
     justify-content: flex-start;
+  }
+}
+
+/* Failure View */
+.p-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.p-img {
+  width: 80%;
+  max-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .p-img {
+    max-width: 260px;
+  }
+}
+.p-head {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #262626;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-head {
+    font-size: 20px;
+  }
+}
+.p-btn {
+  width: 100px;
+  height: 32px;
+  background: #4094ef;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .p-btn {
+    width: 127px;
+    height: 48px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+
+/* loader container */
+.profile-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+/* No Posts container */
+.no-post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width: 100%;
+}
+
+.camera-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1.11628px solid #262626;
+  border-radius: 24px;
+}
+@media screen and (min-width: 768px) {
+  .camera-container {
+    width: 86px;
+    height: 86px;
+    border: 2px solid #262626;
+    border-radius: 43px;
+  }
+}
+.camera-icon {
+  height: 26.790693283081055px;
+  width: 29.023250579833984px;
+  border-radius: 0px;
+  color: #262626;
+}
+@media screen and (min-width: 768px) {
+  .camera-icon {
+    height: 45px;
+    width: 48px;
+  }
+}
+
+.no-posts-para {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #262626;
+}
+@media screen and (min-width: 768px) {
+  .no-posts-para {
+    font-size: 32px;
   }
 }

@@ -1,5 +1,4 @@
 import Slider from 'react-slick'
-import {TiWarningOutline} from 'react-icons/ti'
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import {httpOptions} from '../../utils/getHttpOptions'
@@ -91,7 +90,7 @@ class StorySlider extends Component {
         const {userId, username, storyUrl} = eachStory
         return (
           <div className="slick-item" key={userId}>
-            <img className="story-image" src={storyUrl} alt="story" />
+            <img className="story-image" src={storyUrl} alt="user story" />
             <p className="story-user">{username}</p>
           </div>
         )
@@ -108,8 +107,12 @@ class StorySlider extends Component {
 
   renderStoryFailure = () => (
     <div className="rf-container">
-      <TiWarningOutline className="rf-icon" />
-      <h1 className="rf-head">Something went wrong. Please try again.</h1>
+      <img
+        className="rf-img"
+        alt="failure view"
+        src="https://res.cloudinary.com/dqjlpg7ra/image/upload/v1684553181/mini-project-insta/failure-api_upzdpn.svg"
+      />
+      <p className="rf-head">Something went wrong. Please try again.</p>
       <button onClick={this.getStories} className="rf-btn" type="button">
         Try again
       </button>

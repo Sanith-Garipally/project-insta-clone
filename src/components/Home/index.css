@@ -9,6 +9,34 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .home-content-wrapper {
+    width: 80%;
+  }
+}
+.search-head-container {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.search-head {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 15%);
+  width: 80%;
+  margin: auto;
+}
+.search-container {
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 20px;
+}
 
 .home-loader-container {
   display: flex;
@@ -19,6 +47,17 @@
   border-radius: 4px;
   width: 80%;
 }
+
+.search-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 100%;
+}
+
 .pf-container {
   display: flex;
   justify-content: center;
@@ -57,4 +96,84 @@
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+.sf-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  width: 100%;
+}
+.sf-image {
+  width: 100%;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .sf-image {
+    max-width: 200px;
+  }
+}
+
+/* No Search results */
+.no-sr-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.no-sr-img {
+  width: 100%;
+  max-width: 180px;
+}
+
+.no-sr-head {
+  font-family: 'Roboto';
+  font-style: normal;
+  color: #262626;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.no-sr-para {
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  color: #989898;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .no-sr-img {
+    max-width: 400px;
+  }
+
+  .no-sr-head {
+    font-size: 32px;
+  }
+
+  .no-sr-para {
+    font-size: 20px;
+  }
+}
+
+.posts-failure-img {
+  width: 100%;
+  width: 150px;
+}
+@media screen and (min-width: 768px) {
+  .posts-failure-img {
+    max-width: 250px;
+  }
 }
