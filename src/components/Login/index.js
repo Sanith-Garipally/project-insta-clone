@@ -86,8 +86,8 @@ class Login extends Component {
               </label>
               <input
                 className="input"
-                onChange={this.handleInputChange}
-                value={username}
+                // onChange={this.handleInputChange}
+                value={'rahul'}
                 type="text"
                 id="username"
                 placeholder="Username"
@@ -100,8 +100,8 @@ class Login extends Component {
               </label>
               <input
                 className="input"
-                onChange={this.handleInputChange}
-                value={password}
+                // onChange={this.handleInputChange}
+                value={'rahul@2021'}
                 type="password"
                 id="password"
                 placeholder="Password"
